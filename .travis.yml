@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t itay19/docker-react -f Dockerfile.dev .
 
-scrip:
+script:
   - docker run -e CI=true itay19/docker-react npm run test -- --coverage
